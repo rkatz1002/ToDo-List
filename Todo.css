@@ -1,0 +1,137 @@
+body
+{
+    background-color: #ECE5A1;
+    color:#2868e0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.theTable
+{
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+table
+{
+    border-collapse: collapse;/*take out space between borders*/
+}
+
+.tableHeadCell
+{
+    width:10em;
+    vertical-align: center;
+    border-bottom: 1px solid #2868e0;
+}
+
+.tableHeadCellImage
+{
+    width:10em;
+    vertical-align: center;
+    border-bottom: 1px solid #2868e0;
+    border-right: 1px solid #2868e0;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.tableHeadCellImage:hover
+{
+    background-color: #2868e0;
+    color: white;
+    cursor: pointer;
+}
+
+.tableHeadButton
+{
+    background-color: #ECE5A1;
+    color:#2868e0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px;
+    font-size: 50px;
+    width:10em;
+    vertical-align: center;
+    text-align:center;/*alinhamento horizontal*/
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.tableHeadButton:hover
+{
+    background-color: #2868e0;
+    color: white;
+    cursor: pointer;
+}
+
+.tableBodyCell
+{
+    font-size:15px;
+    text-align: center;
+    border-bottom: 1px solid #2868e0;
+    width: 100%;
+    padding-top:25px;
+    padding-bottom:25px; 
+}
+
+.tableBodyCellImage
+{
+    border-bottom: 1px solid #2868e0;
+    border-right: 1px solid #2868e0;
+    width: 100%;
+    padding-top:25px;
+    padding-bottom:25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tableBodyCell:hover
+{
+    background-color: #2868e0;
+    color: white;
+}
+
+.inputs
+{
+    margin-top:50px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+input
+{
+    border:0px;
+    border-bottom: 2px  solid #ECE5A1;
+    color: black;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding-right:30px;
+    padding-left:30px;
+
+    -webkit-transition-duration: 0.6s; /* Safari */
+     transition-duration: 1.0s;
+}
+
+input:hover
+{
+    border-color: #2868e0;
+    opacity: 0.7;
+    outline: none;
+}
+
+.timesImage
+{
+    width: 30px;
+    opacity: 0;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+}
+
+.timesImage:hover
+{
+    opacity: 1;
+}

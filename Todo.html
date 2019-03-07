@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>TODO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="cool todo list">
+    <meta name="author" content="ITA Jr">
+    <link rel="stylesheet" href="Todo.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+</head>
+<body>
+    <form>
+         <div class="theTable">
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th class="tableHeadCellImage">Take Off</th>
+                    <th class="tableHeadCell">
+                        <button 
+                            class="tableHeadButton"
+                            type="button"
+                            onclick="handleToDoClick()"
+                        >
+                             <!---the type="button" makes sure the page wont reload-->
+                            TODO
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                <tr class="tableBodyRow">
+                    <td class="tableBodyCellImage">
+                        <img class="timesImage" src="times.svg"/>
+                    </td>
+                    <td class="tableBodyCell">Estudar o ToDo</td>
+                </tr>
+                <tr class="tableBodyRow">
+                    <td class="tableBodyCellImage">
+                        <img class="timesImage" src="times.svg"/>
+                    </td>
+                    <td class="tableBodyCell">Lista Mat12</td>
+                </tr>
+                <tr class="tableBodyRow">
+                    <td class="tableBodyCellImage">
+                        <img class="timesImage" src="times.svg"/>
+                    </td>
+                    <td class="tableBodyCell">Testinho de Química</td>
+                </tr>
+                <tr class="tableBodyRow">
+                    <td class="tableBodyCellImage">
+                        <img class="timesImage" src="times.svg"/>  
+                    </td>
+                    <td class="tableBodyCell">Pagar cartão de crédito</td>
+            </tbody>
+        </table>
+        <div class="inputs">
+            <input placeholder="ToDo" type="text" id="thingToDo"/>
+        </div>
+    </div>
+    </form>
+    
+    <script src="Todo.js"></script>  
+    
+    <script>
+        $(document).ready(function(){
+            
+            $(".tableBodyRow").dblclick(function(){
+              $(this).remove();
+            });
+        });
+    </script>  
+</body>
+
+</html>
